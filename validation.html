@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+<body>
+    <main>
+        <h1>login</h1>
+    <form 
+    method="post" action="https://api-gateway.fullstack.edu.vn/action_page.php" autocomplete="off">
+        <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" name="emaillll" id="email" required placeholder="Nhập email">
+            <p class="error">Vui lòng nhập emai</p>
+        </div>
+        <div class="form__group">
+            <label for="password">Password</label>
+            <input type="password" name="passworddd" id="password" required minlength="6" placeholder="Nhập mật khẩu">
+            <p class="error">Mật khẩu cần ít nhất 6 ký tự</p>
+        </div>
+        <button class="form__group-login" type="submit">Login</button>
+    </form>
+    </main>
+</body>
+</html>

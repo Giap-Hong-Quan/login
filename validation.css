@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form:has(:invalid) .form__group-login{
+    opacity: 0.5;
+    pointer-events: none
+}
+.form__group label{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.form__group input{
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 8px
+    
+}
+.form__group-login{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    color: #Fff;
+    font-size: 20px;
+
+}
+.form__group .error{
+    margin: 4px;
+    font-size: 14px;
+    font-weight:500 ;
+    color: red;
+    display: none;
+}
+.form__group:has(:invalid:not(:placeholder-shown)) .error{
+    display: block;
+}
+/* :has() */
